@@ -6,6 +6,10 @@ public class Weapons {
     private boolean isSingleOperator;
     private String damageType;
 
+    public Weapons() {
+        this("", 0, false, true, "");
+    }
+
     public Weapons(String name, int price) {
         this(name, price, false, true, "");
     }
