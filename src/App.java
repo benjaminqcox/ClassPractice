@@ -9,7 +9,10 @@ public class App {
         // weapon.setDamageType("Slashing");
         // weapon.printWeapon();
 
-        Weapons weapon2 = new Weapons("Sword", 100, true, true, "Slashing");
+        Weapons weapon = new Weapons("Sword", 100, true, true, "Slashing");
+        weapon.printWeapon();
+
+        Weapons weapon2 = new Weapons("Gun", 250);
         weapon2.printWeapon();
     }
 }
