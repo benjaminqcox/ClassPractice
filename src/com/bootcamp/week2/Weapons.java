@@ -1,3 +1,4 @@
+package com.bootcamp.week2;
 public class Weapons {
     private String name;
     private int price;
@@ -16,6 +17,7 @@ public class Weapons {
         this.isSingleOperator = isSingleOperator;
         this.damageType = damageType;
     }
+
 
     public String getName() {
         return name;
@@ -55,6 +57,17 @@ public class Weapons {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        String weaponString = "";
+        weaponString += "Name: " + this.name + "\n";
+        weaponString += "Price: " + this.price + "\n";
+        weaponString += "One Handed: " + this.isOneHanded + "\n";
+        weaponString += "Single Operator: " + this.isSingleOperator + "\n";
+        weaponString += "Damage Type: " + this.damageType + "\n";
+        return weaponString;
     }
 
     public void printWeapon() {
