@@ -4,8 +4,8 @@ public class App {
         // Weapons weapon = new Weapons();
         // weapon.setName("Sword");
         // weapon.setPrice(100);
-        // weapon.setOneHanded(true);
-        // weapon.setSingleOperator(true);
+        // weapon.setIsOneHanded(true);
+        // weapon.setIsSingleOperator(true);
         // weapon.setDamageType("Slashing");
         // weapon.printWeapon();
 

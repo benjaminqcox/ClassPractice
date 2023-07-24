@@ -25,11 +25,11 @@ public class Weapons {
         return price;
     }
 
-    public boolean isOneHanded() {
+    public boolean getIsOneHanded() {
         return isOneHanded;
     }
 
-    public boolean isSingleOperator() {
+    public boolean getIsSingleOperator() {
         return singleOperator;
     }
 
@@ -41,11 +41,11 @@ public class Weapons {
         this.name = name;
     }
 
-    public void setOneHanded(boolean oneHanded) {
+    public void setIsOneHanded(boolean oneHanded) {
         isOneHanded = oneHanded;
     }
 
-    public void setSingleOperator(boolean singleOperator) {
+    public void setIsSingleOperator(boolean singleOperator) {
         this.singleOperator = singleOperator;
     }
 
