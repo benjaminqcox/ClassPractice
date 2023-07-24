@@ -2,18 +2,18 @@ public class Weapons {
     private String name;
     private int price;
     private boolean isOneHanded;
-    private boolean singleOperator;
+    private boolean isSingleOperator;
     private String damageType;
 
     public Weapons(String name, int price) {
         this(name, price, false, true, "");
     }
 
-    public Weapons(String name, int price, boolean isOneHanded, boolean singleOperator, String damageType) {
+    public Weapons(String name, int price, boolean isOneHanded, boolean isSingleOperator, String damageType) {
         this.name = name;
         this.price = price;
         this.isOneHanded = isOneHanded;
-        this.singleOperator = singleOperator;
+        this.isSingleOperator = isSingleOperator;
         this.damageType = damageType;
     }
 
@@ -30,7 +30,7 @@ public class Weapons {
     }
 
     public boolean getIsSingleOperator() {
-        return singleOperator;
+        return isSingleOperator;
     }
 
     public String getDamageType() {
@@ -46,7 +46,7 @@ public class Weapons {
     }
 
     public void setIsSingleOperator(boolean singleOperator) {
-        this.singleOperator = singleOperator;
+        this.isSingleOperator = singleOperator;
     }
 
     public void setDamageType(String damageType) {
@@ -61,7 +61,7 @@ public class Weapons {
         System.out.println("Name: " + this.name);
         System.out.println("Price: " + this.price);
         System.out.println("One Handed: " + this.isOneHanded);
-        System.out.println("Single Operator: " + this.singleOperator);
+        System.out.println("Single Operator: " + this.isSingleOperator);
         System.out.println("Damage Type: " + this.damageType);
     }
 }
