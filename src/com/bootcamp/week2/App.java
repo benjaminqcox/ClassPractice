@@ -22,11 +22,16 @@ public class App {
         Weapons[] allWeapons = {new Weapons("Sword", 100, true, true, "Slashing"),
                 new Weapons("Gun", 250, false, false, "Piercing"),
                 new Weapons("Bow", 150, false, true, "Piercing")};
+
+
+        for (int i = 0; i > allWeapons.length; i++) {
+            System.out.println(allWeapons[i]);
+        }
+
         for (Weapons currentWeapon : allWeapons) {
             System.out.println(currentWeapon);
         }
 
-        
         StringBuilder sb = new StringBuilder();
         for (Weapons currentWeapons : allWeapons) {
             sb.append(currentWeapons.toString() + "\n\n");
