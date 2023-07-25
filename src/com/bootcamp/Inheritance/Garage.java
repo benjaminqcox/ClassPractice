@@ -1,15 +1,16 @@
 package com.bootcamp.Inheritance;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Garage {
     private List<Vehicle> myAwesomeCollection = new ArrayList<>();
 
     public Garage(Vehicle... myVehicles) {
+        Arrays.sort(myVehicles);
         for (Vehicle v : myVehicles) {
             myAwesomeCollection.add(v);
         }
+        Collections.sort(myAwesomeCollection);
     }
     
     public int getTotalBill() {
@@ -23,6 +24,7 @@ public class Garage {
 
     public void addVehicle(Vehicle v) {
         myAwesomeCollection.add(v);
+        Collections.sort(myAwesomeCollection);
     }
 
     public void removeVehicle(int id) {
@@ -36,9 +38,9 @@ public class Garage {
 
     @Override
     public String toString() {
-        String output = "Your garage contains: ";
+        String output = "Your garage contains: \n";
         for (Vehicle v : myAwesomeCollection) {
-            output += v.getMake() + " " + v.getModel() + "\n";
+            output += v.getMake() + " " + v.getModel() + " " + v.getYear() + "\n";
         }
         return output;
     }

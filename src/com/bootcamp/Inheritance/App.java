@@ -8,8 +8,10 @@ public class App {
         Garage garage = new Garage(car1, motorbike1);
         garage.addVehicle(van1);
         garage.removeVehicle(motorbike1.getId());
+        car1.fly();
 
+
+        System.out.println(garage.getTotalBill());
         System.out.println(garage);
     }
-    
 }

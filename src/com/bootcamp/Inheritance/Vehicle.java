@@ -2,7 +2,7 @@ package com.bootcamp.Inheritance;
 
 import java.util.Random;
 
-public class Vehicle {
+public abstract class Vehicle implements Comparable<Vehicle> {
     private int numWheels;
     private int maxSpeed;
     private int year;
@@ -27,9 +27,7 @@ public class Vehicle {
         return this.id;
     }
 
-    public double getBill() {
-        return 0.02;
-    }
+    public abstract double getBill();
 
     public void setMake(String make) {
         this.make = make;
@@ -77,6 +75,11 @@ public class Vehicle {
 
     public int getNumPreviousOwners() {
         return numPreviousOwners;
+    }
+
+    @Override
+    public int compareTo(Vehicle otherVehicle) {
+        return  otherVehicle.getYear() - this.getYear();
     }
 
     @Override

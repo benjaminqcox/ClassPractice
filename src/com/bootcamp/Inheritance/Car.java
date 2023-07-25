@@ -1,6 +1,6 @@
 package com.bootcamp.Inheritance;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Fly {
     private boolean hasSunRoof;
 
     public Car(String make, String model, int year, int maxSpeed, int numPreviousOwners, int numWheels, boolean hasSunRoof) {
@@ -18,6 +18,10 @@ public class Car extends Vehicle {
 
     public boolean getHasSunRoof() {
         return hasSunRoof;
+    }
+
+    public void fly() {
+        System.out.println("My fly mode seems to be broken :(");
     }
 
     @Override
