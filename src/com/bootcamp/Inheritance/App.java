@@ -42,5 +42,6 @@ public class App {
 
         // System.out.println(garage.getTotalBill());
         // System.out.println(garage);
+        UserInput.closeScanner();
     }
 }
